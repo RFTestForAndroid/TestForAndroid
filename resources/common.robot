@@ -24,8 +24,8 @@ Variables    ../variables/variables_file.py
     ...
     ...    参数信息:
     ...    file_name:    截图保存文件名
-    [Arguments]    ${file_name}=None
-    capture page screenshot    ../screenshots${/}${file_name}
+    ${png_name}=    get time
+    capture page screenshot    ../screenshots${/}${png_name}.png
 
 关闭应用
     close application

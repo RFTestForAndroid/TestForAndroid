@@ -7,10 +7,10 @@ import os
 
 APPIUM_URL = 'http://localhost:4723/wd/hub'
 PLATFORM_NAME = 'Android'
-DEVICE_NAME = 'P008000150000166'
+DEVICE_NAME = 'DU2TAN1486023904'
 APP_PATH = os.path.join(os.path.dirname(__file__), '../testApp/calc.apk')
-APP_PACKAGE = 'com.holtjma.calcplusplus'
-APP_ACTIVITY = 'com.holtjma.calcplusplus.calcplusplus'
+APP_PACKAGE = 'com.android.calculator2'
+APP_ACTIVITY = '.Calculator'
 
 # 设置启动参数
 if APP_ACTIVITY and APP_PACKAGE:
