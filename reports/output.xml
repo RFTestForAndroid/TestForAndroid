@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170505 14:55:03.257" generator="Robot 3.0 (Python 3.4.5 on linux)">
+<suite id="s1" source="/home/ogq/github_proj/TestForAndroid/features" name="计算器测试">
+<suite id="s1-s1" source="/home/ogq/github_proj/TestForAndroid/features/demo.robot" name="Demo">
+<kw library="common" type="setup" name="打开应用">
+<doc>打开应用</doc>
+<kw library="BuiltIn" name="Set Global Variable">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${DRIVER}</arg>
+<arg>${None}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:03.366" level="INFO">${DRIVER} = None</msg>
+<status status="PASS" endtime="20170505 14:55:03.366" starttime="20170505 14:55:03.365"></status>
+</kw>
+<kw library="AppiumLibrary" name="Open Application">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${APPIUM_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+</arguments>
+<assign>
+<var>${DRIVER}</var>
+</assign>
+<msg timestamp="20170505 14:55:09.230" level="INFO">${DRIVER} = 1</msg>
+<status status="PASS" endtime="20170505 14:55:09.230" starttime="20170505 14:55:03.366"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:09.231" starttime="20170505 14:55:03.365"></status>
+</kw>
+<test id="s1-s1-t1" name="验证应用主界面元素-成功例子">
+<kw library="common" name="等待文本显示">
+<doc>等待界面中指定的文本展示</doc>
+<arguments>
+<arg>首页</arg>
+<arg>timeout=15000</arg>
+</arguments>
+<kw library="AppiumLibrary" name="Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>timeout=${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20170505 14:55:11.078" starttime="20170505 14:55:09.234"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:11.078" starttime="20170505 14:55:09.233"></status>
+</kw>
+<kw library="common" name="验证存在文本">
+<doc>验证界面中包含指定的文本信息，不包含报错处理</doc>
+<arguments>
+<arg>首页</arg>
+</arguments>
+<kw library="AppiumLibrary" name="Page Should Contain Text">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:11.382" level="INFO">Current page contains text '首页'.</msg>
+<status status="PASS" endtime="20170505 14:55:11.382" starttime="20170505 14:55:11.079"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:11.382" starttime="20170505 14:55:11.079"></status>
+</kw>
+<kw library="common" name="验证存在文本">
+<doc>验证界面中包含指定的文本信息，不包含报错处理</doc>
+<arguments>
+<arg>分类</arg>
+</arguments>
+<kw library="AppiumLibrary" name="Page Should Contain Text">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:11.698" level="INFO">Current page contains text '分类'.</msg>
+<status status="PASS" endtime="20170505 14:55:11.698" starttime="20170505 14:55:11.383"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:11.699" starttime="20170505 14:55:11.382"></status>
+</kw>
+<kw library="common" name="验证存在文本">
+<doc>验证界面中包含指定的文本信息，不包含报错处理</doc>
+<arguments>
+<arg>发现</arg>
+</arguments>
+<kw library="AppiumLibrary" name="Page Should Contain Text">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:11.950" level="INFO">Current page contains text '发现'.</msg>
+<status status="PASS" endtime="20170505 14:55:11.950" starttime="20170505 14:55:11.699"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:11.950" starttime="20170505 14:55:11.699"></status>
+</kw>
+<kw library="common" name="验证存在文本">
+<doc>验证界面中包含指定的文本信息，不包含报错处理</doc>
+<arguments>
+<arg>购物袋</arg>
+</arguments>
+<kw library="AppiumLibrary" name="Page Should Contain Text">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:12.121" level="INFO">Current page contains text '购物袋'.</msg>
+<status status="PASS" endtime="20170505 14:55:12.121" starttime="20170505 14:55:11.951"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:12.121" starttime="20170505 14:55:11.950"></status>
+</kw>
+<kw library="common" name="验证存在文本">
+<doc>验证界面中包含指定的文本信息，不包含报错处理</doc>
+<arguments>
+<arg>我的</arg>
+</arguments>
+<kw library="AppiumLibrary" name="Page Should Contain Text">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:12.268" level="INFO">Current page contains text '我的'.</msg>
+<status status="PASS" endtime="20170505 14:55:12.269" starttime="20170505 14:55:12.122"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:12.269" starttime="20170505 14:55:12.121"></status>
+</kw>
+<kw library="common" name="验证存在文本">
+<doc>验证界面中包含指定的文本信息，不包含报错处理</doc>
+<arguments>
+<arg>德基在线</arg>
+</arguments>
+<kw library="AppiumLibrary" name="Page Should Contain Text">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:12.449" level="INFO">Current page contains text '德基在线'.</msg>
+<status status="PASS" endtime="20170505 14:55:12.449" starttime="20170505 14:55:12.270"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:12.450" starttime="20170505 14:55:12.269"></status>
+</kw>
+<kw library="common" name="验证存在元素">
+<doc>验证界面中包含指定的元素信息，不包含报错处理</doc>
+<arguments>
+<arg>android=UiSelector().resourceId("com.dejionline.deji:id/btn_right")</arg>
+</arguments>
+<kw library="AppiumLibrary" name="Page Should Contain Element">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:12.590" level="INFO">Current page contains element 'android=UiSelector().resourceId("com.dejionline.deji:id/btn_right")'.</msg>
+<status status="PASS" endtime="20170505 14:55:12.591" starttime="20170505 14:55:12.450"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:12.591" starttime="20170505 14:55:12.450"></status>
+</kw>
+<kw library="common" type="teardown" name="用例后处理">
+<doc>判断用例状态是否失败，失败截图处理</doc>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${TEST STATUS}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:12.593" level="INFO">PASS</msg>
+<status status="PASS" endtime="20170505 14:55:12.594" starttime="20170505 14:55:12.593"></status>
+</kw>
+<kw library="BuiltIn" name="Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${TEST STATUS}'=='FAIL'</arg>
+<arg>获取屏幕截图</arg>
+</arguments>
+<status status="PASS" endtime="20170505 14:55:12.598" starttime="20170505 14:55:12.594"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:12.598" starttime="20170505 14:55:12.591"></status>
+</kw>
+<doc>测试是否能和移动设备交互</doc>
+<status status="PASS" endtime="20170505 14:55:12.598" critical="yes" starttime="20170505 14:55:09.231"></status>
+</test>
+<test id="s1-s1-t2" name="验证应用主界面元素-失败例子">
+<kw library="common" name="等待文本显示">
+<doc>等待界面中指定的文本展示</doc>
+<arguments>
+<arg>首页</arg>
+<arg>timeout=15000</arg>
+</arguments>
+<kw library="AppiumLibrary" name="Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>timeout=${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20170505 14:55:12.825" starttime="20170505 14:55:12.601"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:12.826" starttime="20170505 14:55:12.601"></status>
+</kw>
+<kw library="common" name="验证存在文本">
+<doc>验证界面中包含指定的文本信息，不包含报错处理</doc>
+<arguments>
+<arg>主页</arg>
+</arguments>
+<kw library="AppiumLibrary" name="Page Should Contain Text">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:13.189" level="INFO">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;hierarchy rotation="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][720,1208]" resource-id="" instance="0"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][720,1208]" resource-id="" instance="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,48][720,1208]" resource-id="android:id/content" instance="1"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,48][720,1208]" resource-id="" instance="1"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,48][720,1103]" resource-id="com.dejionline.deji:id/realtabcontent" instance="2"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,48][720,1103]" resource-id="" instance="2"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,48][720,144]" resource-id="com.dejionline.deji:id/head_view" instance="3"&gt;&lt;android.widget.RelativeLayout index="0" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,48][720,144]" resource-id="" instance="0"&gt;&lt;android.widget.TextView index="0" text="德基在线" class="android.widget.TextView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[300,75][420,116]" resource-id="com.dejionline.deji:id/tv_center" instance="0"/&gt;&lt;android.widget.Button NAF="true" index="1" text="" class="android.widget.Button" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[648,48][720,144]" resource-id="com.dejionline.deji:id/btn_right" instance="0"/&gt;&lt;/android.widget.RelativeLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.RelativeLayout index="1" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,144][720,1103]" resource-id="" instance="1"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,144][720,1103]" resource-id="com.dejionline.deji:id/recyclerView" instance="4"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,144][720,1103]" resource-id="" instance="3"&gt;&lt;android.support.v7.widget.RecyclerView index="0" text="" class="android.support.v7.widget.RecyclerView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="true" scrollable="true" long-clickable="false" password="false" selected="false" bounds="[0,144][720,1103]" resource-id="com.dejionline.deji:id/scrollview" instance="0"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,144][720,647]" resource-id="" instance="5"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,144][720,647]" resource-id="com.dejionline.deji:id/convenientBanner" instance="6"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,144][720,647]" resource-id="" instance="7"&gt;&lt;android.widget.RelativeLayout index="0" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,144][720,647]" resource-id="" instance="2"&gt;&lt;android.support.v4.view.ViewPager index="0" text="" class="android.support.v4.view.ViewPager" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="true" long-clickable="false" password="false" selected="false" bounds="[0,144][720,647]" resource-id="com.dejionline.deji:id/cbLoopViewPager" instance="0"&gt;&lt;android.widget.ImageView NAF="true" index="1" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,144][720,647]" resource-id="" instance="0"/&gt;&lt;/android.support.v4.view.ViewPager&gt;&lt;android.widget.LinearLayout index="1" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[242,616][477,627]" resource-id="com.dejionline.deji:id/loPageTurningPoint" instance="8"&gt;&lt;android.widget.ImageView index="0" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[242,616][289,627]" resource-id="" instance="1"/&gt;&lt;android.widget.ImageView index="1" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[289,616][336,627]" resource-id="" instance="2"/&gt;&lt;android.widget.ImageView index="2" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[336,616][383,627]" resource-id="" instance="3"/&gt;&lt;android.widget.ImageView index="3" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[383,616][430,627]" resource-id="" instance="4"/&gt;&lt;android.widget.ImageView index="4" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[430,616][477,627]" resource-id="" instance="5"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.RelativeLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.LinearLayout index="1" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,647][720,1102]" resource-id="" instance="9"&gt;&lt;android.widget.RelativeLayout index="0" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,647][720,667]" resource-id="com.dejionline.deji:id/line_divide" instance="3"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,647][720,648]" resource-id="com.dejionline.deji:id/line_divide_top" instance="0"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,648][720,667]" resource-id="com.dejionline.deji:id/line_divide" instance="1"/&gt;&lt;/android.widget.RelativeLayout&gt;&lt;android.widget.RelativeLayout index="1" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,667][720,1102]" resource-id="" instance="4"&gt;&lt;android.widget.ImageView NAF="true" index="0" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,667][720,1102]" resource-id="com.dejionline.deji:id/image" instance="6"/&gt;&lt;/android.widget.RelativeLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.LinearLayout index="2" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1102][720,1103]" resource-id="" instance="10"&gt;&lt;android.widget.RelativeLayout index="0" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1102][720,1103]" resource-id="com.dejionline.deji:id/line_divide" instance="5"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1102][720,1103]" resource-id="com.dejionline.deji:id/line_divide_top" instance="2"/&gt;&lt;/android.widget.RelativeLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.support.v7.widget.RecyclerView&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.RelativeLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;android.widget.TabHost index="1" text="" class="android.widget.TabHost" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1103][720,1208]" resource-id="android:id/tabhost" instance="0"&gt;&lt;android.widget.LinearLayout index="1" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1103][720,1208]" resource-id="" instance="11"&gt;&lt;android.widget.TabWidget index="0" text="" class="android.widget.TabWidget" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1103][720,1208]" resource-id="android:id/tabs" instance="0"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="true" bounds="[0,1103][144,1208]" resource-id="" instance="12"&gt;&lt;android.widget.RelativeLayout index="0" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="true" bounds="[0,1105][144,1165]" resource-id="" instance="6"&gt;&lt;android.widget.ImageView index="0" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="true" bounds="[52,1125][92,1165]" resource-id="com.dejionline.deji:id/icon" instance="7"/&gt;&lt;/android.widget.RelativeLayout&gt;&lt;android.widget.TextView index="1" text="首页" class="android.widget.TextView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="true" bounds="[48,1167][96,1200]" resource-id="com.dejionline.deji:id/text" instance="1"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.LinearLayout index="1" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[144,1103][288,1208]" resource-id="" instance="13"&gt;&lt;android.widget.RelativeLayout index="0" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[144,1105][288,1165]" resource-id="" instance="7"&gt;&lt;android.widget.ImageView index="0" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[196,1125][236,1165]" resource-id="com.dejionline.deji:id/icon" instance="8"/&gt;&lt;/android.widget.RelativeLayout&gt;&lt;android.widget.TextView index="1" text="分类" class="android.widget.TextView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[192,1167][240,1200]" resource-id="com.dejionline.deji:id/text" instance="2"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.LinearLayout index="2" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[288,1103][432,1208]" resource-id="" instance="14"&gt;&lt;android.widget.RelativeLayout index="0" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[288,1103][432,1167]" resource-id="" instance="8"&gt;&lt;android.widget.ImageView index="0" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[338,1123][382,1167]" resource-id="com.dejionline.deji:id/icon" instance="9"/&gt;&lt;/android.widget.RelativeLayout&gt;&lt;android.widget.TextView index="1" text="发现" class="android.widget.TextView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[336,1169][384,1202]" resource-id="com.dejionline.deji:id/text" instance="3"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.LinearLayout index="3" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[432,1103][576,1208]" resource-id="" instance="15"&gt;&lt;android.widget.RelativeLayout index="0" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[432,1105][576,1165]" resource-id="" instance="9"&gt;&lt;android.widget.ImageView index="0" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[484,1125][524,1165]" resource-id="com.dejionline.deji:id/icon" instance="10"/&gt;&lt;/android.widget.RelativeLayout&gt;&lt;android.widget.TextView index="1" text="购物袋" class="android.widget.TextView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[468,1167][540,1200]" resource-id="com.dejionline.deji:id/text" instance="4"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.LinearLayout index="4" text="" class="android.widget.LinearLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[576,1103][720,1208]" resource-id="" instance="16"&gt;&lt;android.widget.RelativeLayout index="0" text="" class="android.widget.RelativeLayout" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[576,1105][720,1165]" resource-id="" instance="10"&gt;&lt;android.widget.ImageView index="0" text="" class="android.widget.ImageView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[628,1125][668,1165]" resource-id="com.dejionline.deji:id/icon" instance="11"/&gt;&lt;/android.widget.RelativeLayout&gt;&lt;android.widget.TextView index="1" text="我的" class="android.widget.TextView" package="com.dejionline.deji" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[624,1167][672,1200]" resource-id="com.dejionline.deji:id/text" instance="5"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.TabWidget&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.TabHost&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/hierarchy&gt;</msg>
+<msg timestamp="20170505 14:55:13.189" level="FAIL">Page should have contained text '主页' but did not</msg>
+<status status="FAIL" endtime="20170505 14:55:13.189" starttime="20170505 14:55:12.828"></status>
+</kw>
+<status status="FAIL" endtime="20170505 14:55:13.190" starttime="20170505 14:55:12.827"></status>
+</kw>
+<kw library="common" type="teardown" name="用例后处理">
+<doc>判断用例状态是否失败，失败截图处理</doc>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${TEST STATUS}</arg>
+</arguments>
+<msg timestamp="20170505 14:55:13.191" level="INFO">FAIL</msg>
+<status status="PASS" endtime="20170505 14:55:13.191" starttime="20170505 14:55:13.190"></status>
+</kw>
+<kw library="BuiltIn" name="Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${TEST STATUS}'=='FAIL'</arg>
+<arg>获取屏幕截图</arg>
+</arguments>
+<kw library="common" name="获取屏幕截图">
+<doc>获取界面截图</doc>
+<kw library="BuiltIn" name="Get Time">
+<doc>Returns the given time in the requested format.</doc>
+<arguments>
+<arg>epoch</arg>
+</arguments>
+<assign>
+<var>${png_name}</var>
+</assign>
+<msg timestamp="20170505 14:55:13.194" level="INFO">${png_name} = 1493967313</msg>
+<status status="PASS" endtime="20170505 14:55:13.194" starttime="20170505 14:55:13.193"></status>
+</kw>
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>../reports${/}screenshots${/}${png_name}.png</arg>
+</arguments>
+<msg timestamp="20170505 14:55:15.447" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/1493967313.png"&gt;&lt;img src="screenshots/1493967313.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170505 14:55:15.448" starttime="20170505 14:55:13.194"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:15.448" starttime="20170505 14:55:13.192"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:15.448" starttime="20170505 14:55:13.191"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:15.448" starttime="20170505 14:55:13.190"></status>
+</kw>
+<doc>测试是否能和移动设备交互</doc>
+<status status="FAIL" endtime="20170505 14:55:15.449" critical="yes" starttime="20170505 14:55:12.599">Page should have contained text '主页' but did not</status>
+</test>
+<kw library="common" type="teardown" name="关闭应用">
+<kw library="AppiumLibrary" name="Close Application">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20170505 14:55:18.248" starttime="20170505 14:55:15.451"></status>
+</kw>
+<status status="PASS" endtime="20170505 14:55:18.248" starttime="20170505 14:55:15.450"></status>
+</kw>
+<doc>测试应用Demo</doc>
+<status status="FAIL" endtime="20170505 14:55:18.249" starttime="20170505 14:55:03.287"></status>
+</suite>
+<status status="FAIL" endtime="20170505 14:55:18.253" starttime="20170505 14:55:03.258"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" id="s1" name="计算器测试" fail="1">计算器测试</stat>
+<stat pass="1" id="s1-s1" name="Demo" fail="1">计算器测试.Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
